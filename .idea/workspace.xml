@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="63a1e609-1a63-4c46-9aa2-56b9318fdd95" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/VendingMachine.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/requirements" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/streams/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/streams/InMemoryEmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/App.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/inventory/CoinInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/inventory/InMemoryCoinInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/CoinNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/DrinkInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/InMemoryDrinkInventory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/Drink.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/NoSuchDrinkException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/SoldOutException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/PaymentFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/changecalculator/ChangeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/changecalculator/DefaultChangeCalculator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/DrinkPurchaseFacade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/Purchase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/PurchaseInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/PurchaseSummary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sda/vendingmachine/drinks/inventory/InMemoryDrinkInventoryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/sda/warkoczewski/AppTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/VendingMachine-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/VendingMachine.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/sda/vendingmachine/App.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/sda/vendingmachine/coins/model/Coin.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/sda/vendingmachine/purchases/Purchase.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/sda/vendingmachine/purchases/PurchaseSummary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pl/sda/warkoczewski/product/types/fetcher/MyJsonFetcher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-pl.sda.warkoczewski.AppTest.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/surefire-reports/pl.sda.warkoczewski.AppTest.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/META-INF/VendingMachine.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/pl/sda/warkoczewski/AppTest.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/InMemoryDrinkInventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-291">
+              <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/DrinkPurchaseFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/PurchaseInterface.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/Purchase.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/inventory/CoinInventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/App.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/inventory/InMemoryCoinInventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="275">
+              <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#921#922#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/DrinkInventory.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="126">
+              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="JUnit4 Test Class" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/FiveCoin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/FiftyCoin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/beverages/purchases/BeveragePurchaseFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/beverages/repository/InMemoryBeverageRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/model/Stock.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/model/StockNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/repositories/BeverageRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/repositories/MapToBeverageAdapter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/repository/InMemoryCoinRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/repository/StockRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/repository/InMemoryStockRepository.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sda/vendingmachine/stock/repository/InMemoryStockRepositoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/StockFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/PaymentFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/cashbox/model/Inventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/coins/CoinNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/coins/InMemoryCoinRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/coins/CoinRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/coins/Coin.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/repository/InputCoinRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/streams/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/streams/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/streams/InMemoryEmployeeRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/changecalculator/ChangeCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/inputcoins/InputCoinRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/inputcoins/InMemoryInputCoinRepository.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/CoinNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/Coin.java" />
+        <option value="$PROJECT_DIR$/docs/requirements" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/beverages/model/BeverageNotFoundException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/beverages/model/Beverage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/BeveragePurchaseFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/DrinkPurchaseFacade.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/NoSuchDrinkException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/inventory/DrinkInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/PurchaseSummary.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/changecalculator/DefaultChangeCalculator.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/Drink.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/inventory/InMemoryDrinkInventory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sda/vendingmachine/drinks/model/inventory/InMemoryDrinkInventoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/inventory/InventoryInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/InMemoryInventoryInterface.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/interfaces/InventoryInterface.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pl/sda/vendingmachine/drinks/inventory/InMemoryDrinkInventoryTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/inventory/CoinInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/DrinkInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/InMemoryDrinkInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/inventory/InMemoryCoinInventory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/Purchase.java" />
+        <option value="$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/PurchaseInterface.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="VendingMachine" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="VendingMachine" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="17" />
+    <option name="width" value="1865" />
+    <option name="height" value="1038" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="pl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="vendingmachine" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="drinks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="payment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="changecalculator" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="purchases" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="drinks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="inventory" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="VendingMachine" type="b2602c69:ProjectViewProjectNode" />
+              <item name="VendingMachine" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="warkoczewski" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.sda.vendingmachine.drinks.model.inventory" />
+      <recent name="pl.sda.vendingmachine.stock.repository" />
+      <recent name="pl.sda.warkoczewski.product.types.fetcher" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pl.sda.warkoczewski.product.types" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="pl.sda.vendingmachine.drinks.model" />
+      <recent name="pl.sda.vendingmachine.stock.model" />
+      <recent name="pl.sda.vendingmachine.cashbox.model" />
+      <recent name="pl.sda.vendingmachine.beverages.model" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.InMemoryCoinInventory">
+    <configuration name="InMemoryCoinInventory" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="pl.sda.vendingmachine.coins.inventory.InMemoryCoinInventory" />
+      <module name="VendingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sda.vendingmachine.coins.inventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryDrinkInventoryTest.getQuantityShouldReturn5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sda.vendingmachine.drinks.inventory.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sda.vendingmachine.drinks.inventory" />
+      <option name="MAIN_CLASS_NAME" value="pl.sda.vendingmachine.drinks.inventory.InMemoryDrinkInventoryTest" />
+      <option name="METHOD_NAME" value="getQuantityShouldReturn5" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryInventoryInterfaceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sda.vendingmachine.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sda.vendingmachine.drinks.model.inventory" />
+      <option name="MAIN_CLASS_NAME" value="pl.sda.vendingmachine.drinks.model.inventory.InMemoryInventoryInterfaceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryInventoryInterfaceTest.addShouldReturnQuantity6AfterAddingQuantity1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sda.vendingmachine.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sda.vendingmachine.drinks.model.inventory" />
+      <option name="MAIN_CLASS_NAME" value="pl.sda.vendingmachine.drinks.model.inventory.InMemoryInventoryInterfaceTest" />
+      <option name="METHOD_NAME" value="addShouldReturnQuantity6AfterAddingQuantity1" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="InMemoryInventoryInterfaceTest.deduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.sda.vendingmachine.interfaces.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.sda.vendingmachine.drinks.model.inventory" />
+      <option name="MAIN_CLASS_NAME" value="pl.sda.vendingmachine.drinks.model.inventory.InMemoryInventoryInterfaceTest" />
+      <option name="METHOD_NAME" value="deduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.InMemoryCoinInventory" />
+        <item itemvalue="JUnit.InMemoryDrinkInventoryTest.getQuantityShouldReturn5" />
+        <item itemvalue="JUnit.InMemoryInventoryInterfaceTest.deduct" />
+        <item itemvalue="JUnit.InMemoryInventoryInterfaceTest" />
+        <item itemvalue="JUnit.InMemoryInventoryInterfaceTest.addShouldReturnQuantity6AfterAddingQuantity1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63a1e609-1a63-4c46-9aa2-56b9318fdd95" name="Default Changelist" comment="" />
+      <created>1570383583503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1570383583503</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="InMemoryDrinkInventoryTest - 2019.11.11 at 14h 53m 49s.xml">
+      <configuration name="InMemoryDrinkInventoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_deduct - 2019.11.11 at 14h 59m 49s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.deduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_deduct - 2019.11.11 at 15h 00m 00s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.deduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_deduct - 2019.11.11 at 15h 00m 40s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.deduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_deduct - 2019.11.11 at 18h 17m 26s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.deduct" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_getQuantityShouldReturn5 - 2019.11.11 at 18h 46m 15s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.getQuantityShouldReturn5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_getQuantityShouldReturn5 - 2019.11.11 at 18h 47m 42s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.getQuantityShouldReturn5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_getQuantityShouldReturn5 - 2019.11.11 at 18h 49m 00s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.getQuantityShouldReturn5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_getQuantityShouldReturn5 - 2019.11.12 at 14h 49m 12s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.getQuantityShouldReturn5" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InMemoryDrinkInventoryTest_getQuantityShouldReturn5 - 2019.11.12 at 15h 11m 00s.xml">
+      <configuration name="InMemoryDrinkInventoryTest.getQuantityShouldReturn5" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="14" y="0" width="1492" height="830" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29566982" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="UI Designer" order="5" />
+      <window_info id="Learn" order="6" weight="0.3298611" />
+      <window_info id="Favorites" order="7" side_tool="true" />
+      <window_info id="simpleUML" order="8" weight="0.32949933" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.24687934" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.32963988" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32780084" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32918397" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" weight="0.086603515" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/sda/warkoczewski/product/types/MyJsonFetcher.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/CoinName.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/cashbox/repository/InMemoryInventoryRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/beverages/model/BeverageType.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/model/StockNotFoundException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/repositories/MapToBeverageAdapter.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/repositories/BeverageRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/model/Stock.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/repository/StockRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/repository/InMemoryStockRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sda/vendingmachine/stock/repository/InMemoryStockRepositoryTest.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/repository/InMemoryCoinRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/FiftyCoin.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/FiveCoin.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/OneCoin.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/beverages/repository/BeverageRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/TwoCoin.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/beverages/repository/InMemoryBeverageRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/cashbox/model/Inventory.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/cashbox/model/InventoryNotFoundException.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/repository/InputCoinRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/streams/Employee.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="924">
+          <caret line="50" column="85" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="92" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/inputcoins/InMemoryInputCoinRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/inputcoins/InputCoinRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/streams/InMemoryEmployeeRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="26" column="25" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/CoinNotFoundException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#150#151#0" expanded="true" />
+            <element signature="e#180#181#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/stock/StockFacade.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/PaymentFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/CoinRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/InMemoryCoinRepository.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/SoldOutException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding>
+            <element signature="e#167#168#0" expanded="true" />
+            <element signature="e#197#198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/NoSuchDrinkException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="49" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
+          <folding>
+            <element signature="e#184#185#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/PurchaseSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/changecalculator/ChangeCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/payment/changecalculator/DefaultChangeCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#286#287#0" expanded="true" />
+            <element signature="e#307#308#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/interfaces/InventoryInterface.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/model/Coin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sda/warkoczewski/AppTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pl/sda/vendingmachine/drinks/inventory/InMemoryDrinkInventoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/model/Drink.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="54" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/Diagram3.png" />
+    <entry file="file://$PROJECT_DIR$/docs/Diagram3.dia" />
+    <entry file="file://$PROJECT_DIR$/docs/vendingmachine.png" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/requirements">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="67" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/inventory/CoinInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/DrinkInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/coins/inventory/InMemoryCoinInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="64" column="8" selection-start-line="64" selection-start-column="8" selection-end-line="64" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#921#922#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/drinks/inventory/InMemoryDrinkInventory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-291">
+          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/DrinkPurchaseFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/Purchase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/pl/sda/vendingmachine/purchases/PurchaseInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+  <component name="simpleUML.UMLToolWindowPlugin">
+    <General>
+      <option name="birdViewUpdateDelay" value="2000" />
+      <option name="knownFile1" value="file://$PROJECT_DIR$/../vendingmachine.suml" />
+      <option name="knownFile0" value="file://$PROJECT_DIR$/../vendingMachineDiagram.suml" />
+      <option name="defaultFileLocation" value="file://$PROJECT_DIR$/.." />
+    </General>
+    <Classdiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="defaultFieldsExpanded" value="false" />
+      <option name="defaultContructorsExpanded" value="false" />
+      <option name="defaultMethodsExpanded" value="false" />
+      <option name="showParameters" value="true" />
+      <option name="showTooltip" value="true" />
+      <option name="showReturnValues" value="true" />
+      <option name="longModifier" value="true" />
+      <option name="implementsBehaviour" value="1" />
+      <option name="extendsBehaviour" value="1" />
+      <option name="compartmentBehaviour" value="1" />
+      <option name="interfaceBackgroundColor" value="-6494306" />
+      <option name="abstractClassBackgroundColor" value="-1580132" />
+      <option name="classBackgroundColor" value="-6508057" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="quickSourceLinkColor" value="-16776961" />
+      <option name="quickDiagramLinkColor" value="-8454144" />
+      <option name="drawDecorations" value="false" />
+      <option name="hideFieldList" value="" />
+      <option name="showFieldList" value="" />
+      <option name="hideConstructorList" value="" />
+      <option name="showConstructorList" value="" />
+      <option name="hideMethodList" value="" />
+      <option name="showMethodList" value="" />
+      <option name="minimumFigureSize" value="0,0" />
+    </Classdiagram>
+    <Dependencydiagram>
+      <option name="diagramTitleFont" value="SansSerif,1,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="0" />
+    </Dependencydiagram>
+    <Packagediagram>
+      <option name="diagramTitleFont" value="SansSerif,0,12" />
+      <option name="diagramFont" value="SansSerif,0,10" />
+      <option name="packageBackgroundColor" value="-4144960" />
+      <option name="diagramBackgroundColor" value="-1" />
+      <option name="useAntialiasedConnectors" value="true" />
+      <option name="packageNameCompressionLevel" value="2" />
+    </Packagediagram>
+  </component>
+</project>
